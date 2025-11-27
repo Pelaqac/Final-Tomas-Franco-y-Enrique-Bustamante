@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoFuturo - Sobre Nosotros</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&family=Lato:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Iconos -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- CSS exclusivo -->
+  <link rel="stylesheet" href="./nosotros.css">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container">
+    <a class="navbar-brand" href="../index.html">EcoFuturo</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+
+        <li class="nav-item">
+          <a class="nav-link" href="../index.html">Inicio</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="../nosotros/nosotros.html">Nosotros</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="../proyecto/proyecto.html">Proyectos</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="../cambioclimatico/cambioclimatico.html">Cambio Climático</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="../contacto/contacto.html">Contacto</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="../juego/juego.html">Aplicación</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <!-- Header -->
+  <header class="header-nosotros">
+    <div class="overlay"></div>
+    <div class="header-content text-center">
+      <h1>Sobre Nosotros</h1>
+      <p>Comprometidos con un futuro sostenible</p>
+    </div>
+  </header>
+
+  <!-- Contenido -->
+  <section class="contenido">
+    <div class="container">
+
+      <h2 class="text-center">Nuestra Historia</h2>
+      <p class="texto">
+        EcoFuturo nació con el objetivo de impulsar el desarrollo sostenible a través de la educación,
+        la tecnología y la acción comunitaria. Desde nuestros comienzos, trabajamos para conectar a las
+        personas con iniciativas ecológicas innovadoras que generen un impacto positivo real.
+      </p>
+
+      <h2 class="text-center mt-5">Nuestra Misión</h2>
+      <div class="row mt-4 g-4">
+        <div class="col-md-6">
+          <div class="card info-card h-100">
+            <i class="bi bi-globe2 icon"></i>
+            <h4>Protección del planeta</h4>
+            <p>Promover prácticas sostenibles y responsables para preservar los recursos naturales.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card info-card h-100">
+            <i class="bi bi-people icon"></i>
+            <h4>Educación y comunidad</h4>
+            <p>Inspirar a las personas a adoptar hábitos ecológicos mediante programas educativos.</p>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="text-center mt-5">Nuestros Valores</h2>
+      <div class="row mt-4 g-4">
+        <div class="col-md-4">
+          <div class="card valores-card h-100">
+            <h5>🌱 Sostenibilidad</h5>
+            <p>Tomamos decisiones basadas en el cuidado del ambiente a largo plazo.</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card valores-card h-100">
+            <h5>🤝 Compromiso</h5>
+            <p>Trabajamos junto a las comunidades para desarrollar soluciones reales.</p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card valores-card h-100">
+            <h5>💡 Innovación</h5>
+            <p>Promovemos nuevas tecnologías y estrategias ecológicas.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 EcoFuturo | Todos los derechos reservados</p>
+    <div class="mt-3">
+      <a href="#"><i class="bi bi-facebook"></i></a>
+      <a href="#"><i class="bi bi-instagram"></i></a>
+      <a href="#"><i class="bi bi-twitter-x"></i></a>
+      <a href="#"><i class="bi bi-linkedin"></i></a>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    window.addEventListener('scroll', function() {
+      const navbar = document.querySelector('.navbar');
+      navbar.classList.toggle('scrolled', window.scrollY > 50);
+    });
+  </script>
+
+</body>
+</html>

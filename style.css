@@ -1,0 +1,235 @@
+body {
+  font-family: 'Lato', sans-serif;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  transition: background 0.4s;
+}
+
+.navbar.scrolled {
+  background: rgba(13, 71, 161, 0.95);
+  backdrop-filter: blur(6px);
+}
+
+.navbar-brand {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  color: #fff !important;
+}
+
+.navbar-nav .nav-link {
+  color: #fff !important;
+  font-weight: 500;
+  margin-left: 15px;
+  transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #8BC34A !important;
+}
+
+/* BOTÓN DONAR */
+.btn-donar {
+  background-color: #8BC34A;
+  color: #fff !important;
+  padding: 10px 22px;
+  margin-left: 20px;
+  border-radius: 25px;
+  font-weight: 700;
+  transition: 0.3s;
+  display: inline-block;
+}
+
+.btn-donar:hover {
+  background-color: #7CB342;
+  transform: translateY(-2px);
+  color: #fff !important;
+}
+
+/* Hero con carrusel */
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+}
+
+/* Carrusel */
+.hero .carousel-item img {
+  height: 100vh;
+  object-fit: cover;
+  filter: brightness(70%);
+}
+
+.hero .carousel-inner {
+  height: 100%;
+}
+
+/* Overlay adicional para oscurecer */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 1;
+}
+
+/* Contenido */
+.hero-content {
+  position: absolute;
+  z-index: 2;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-family: 'Inter', sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  margin: 20px 0 30px;
+}
+
+.btn-main {
+  background-color: #8BC34A;
+  color: #fff;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.btn-main:hover {
+  background-color: #7CB342;
+  transform: translateY(-2px);
+}
+
+/* Animación automática del carrusel */
+.carousel {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.carousel-item {
+  transition: opacity 1.5s ease-in-out;
+}
+
+
+.hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-family: 'Inter', sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  margin: 20px 0 30px;
+}
+
+.btn-main {
+  background-color: #8BC34A;
+  color: #fff;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.btn-main:hover {
+  background-color: #7CB342;
+  transform: translateY(-2px);
+}
+
+/* Secciones */
+section {
+  padding: 80px 0;
+}
+
+section h2 {
+  font-family: 'Inter', sans-serif;
+  color: #0D47A1;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.section-bg {
+  background-color: #f8f9fa;
+}
+
+/* Cards */
+.card {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(90deg, #0D47A1, #1565C0);
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+footer a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 1.3rem;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: #8BC34A;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+}

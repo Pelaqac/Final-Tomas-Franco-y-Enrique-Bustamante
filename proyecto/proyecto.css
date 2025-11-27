@@ -1,0 +1,144 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background: #f4f7f3;
+    color: #2e3d2e;
+}
+
+/* NAVBAR */
+.bg-dark-green {
+    background-color: #235d2a !important;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.nav-link {
+    color: #d8e9d7 !important;
+    font-weight: 500;
+}
+
+.nav-link.active,
+.nav-link:hover {
+    color: #ffffff !important;
+}
+
+/* HEADER */
+.header {
+    text-align: center;
+    padding: 60px 20px;
+    background: #2e7d32;
+    color: white;
+}
+
+.header h1 {
+    font-size: 2.6rem;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* ------------ SECCIÓN PROYECTOS CON FONDO + OVERLAY ----------- */
+
+.container-proyectos {
+    width: 90%;
+    max-width: 1100px;
+    margin: 60px auto;
+    position: relative;
+
+    /* imagen de fondo */
+    background-image: url('../img/reforestacion.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    /* padding para separar del borde */
+    padding: 50px;
+
+    /* borde suave */
+    border-radius: 20px;
+
+    /* efecto vidrio */
+    backdrop-filter: blur(4px);
+
+    /* grid de tarjetas */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+
+    overflow: hidden;
+}
+
+/* overlay suave verde */
+.container-proyectos::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(46, 125, 50, 0.25); /* Verde transparente suave */
+    backdrop-filter: blur(2px);
+    z-index: 0;
+}
+
+/* Para que las cards queden por encima */
+.card-proyecto {
+    position: relative;
+    z-index: 2;
+}
+
+/* ------------ CARDS ------------ */
+
+.card-proyecto {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 25px;
+    border-radius: 14px;
+    border: 2px solid #d6e8d3;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+    transition: 0.3s ease;
+}
+
+.card-proyecto h2 {
+    color: #2e7d32;
+    margin-bottom: 12px;
+    font-size: 1.5rem;
+}
+
+.card-proyecto p {
+    margin-bottom: 10px;
+    color: #445a44;
+    line-height: 1.5;
+}
+
+.card-proyecto ul {
+    padding-left: 18px;
+}
+
+.card-proyecto li {
+    margin-bottom: 7px;
+    color: #3b4d3b;
+}
+
+/* HOVER */
+.card-proyecto:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.12);
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    padding: 40px 20px;
+    background: #e7f2e5;
+    margin-top: 60px;
+    color: #2e3d2e;
+}

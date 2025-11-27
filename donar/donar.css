@@ -1,0 +1,212 @@
+/* FUENTE GLOBAL */
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    background: #f4f6f7;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+/* ---------------- NAVBAR (copiado y adaptado del index) ---------------- */
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  transition: background 0.4s;
+}
+
+.navbar.scrolled {
+  background: rgba(13, 71, 161, 0.95);
+  backdrop-filter: blur(6px);
+}
+
+.navbar-brand {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  color: #fff !important;
+}
+
+.navbar-nav .nav-link {
+  color: #fff !important;
+  font-weight: 500;
+  margin-left: 15px;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #8BC34A !important;
+}
+
+.btn-donar {
+  background-color: #8BC34A;
+  color: #fff !important;
+  padding: 10px 22px;
+  margin-left: 20px;
+  border-radius: 25px;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+.btn-donar:hover {
+  background-color: #7CB342;
+  transform: translateY(-2px);
+}
+
+
+
+/* ---------------- HERO DONAR ---------------- */
+
+.donar-hero {
+    position: relative;
+    height: 60vh;
+    background: url('../img/bannerong.webp') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.donar-hero .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+}
+
+.hero-content h1 {
+    font-family: 'Inter', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.hero-content p {
+    font-size: 1.25rem;
+    margin-top: 10px;
+}
+
+
+
+/* ---------------- CONTENIDO ---------------- */
+
+.titulo-seccion {
+    font-family: 'Inter', sans-serif;
+    color: #0D47A1;
+    font-weight: 700;
+}
+
+.descripcion {
+    max-width: 750px;
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+
+
+/* ---------------- MÉTODOS ---------------- */
+
+.metodos-container {
+    margin-top: 40px;
+}
+
+.metodo-card {
+    background: white;
+    border-radius: 16px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+    transition: 0.25s;
+}
+
+.metodo-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+
+.metodo-card h3 {
+    color: #1565C0;
+    margin-top: 10px;
+    font-family: 'Inter', sans-serif;
+}
+
+.icono {
+    font-size: 2.8rem;
+    color: #8BC34A;
+}
+
+.qr-img {
+    width: 130px;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+
+
+/* ---------------- BOTONES ---------------- */
+
+.btn-paypal {
+    display: inline-block;
+    padding: 12px 26px;
+    background: #FFC107;
+    font-weight: 700;
+    border-radius: 10px;
+    color: #000;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-paypal:hover {
+    background: #e0a800;
+}
+
+.btn-volver {
+    background-color: #0D47A1;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-volver:hover {
+    background-color: #08347B;
+}
+
+
+
+/* ---------------- FOOTER ---------------- */
+
+.footer {
+    background: linear-gradient(90deg, #0D47A1, #1565C0);
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin-top: 60px;
+}
+
+
+
+/* ---------------- RESPONSIVE ---------------- */
+
+@media (max-width: 992px) {
+    .donar-hero {
+        height: 50vh;
+    }
+    .hero-content h1 {
+        font-size: 2.3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .metodo-card {
+        padding: 25px;
+    }
+    .hero-content p {
+        font-size: 1.1rem;
+    }
+}

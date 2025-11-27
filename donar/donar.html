@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donar | EcoFuturo</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&family=Lato:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Iconos -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="./donar.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container">
+    <a class="navbar-brand" href="../index.html">EcoFuturo</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+
+        <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="../nosotros/nosotros.html">Nosotros</a></li>
+        <li class="nav-item"><a class="nav-link" href="../proyecto/proyecto.html">Proyectos</a></li>
+        <li class="nav-item"><a class="nav-link" href="../cambioclimatico/cambioclimatico.html">Cambio Climático</a></li>
+        <li class="nav-item"><a class="nav-link" href="../contacto/contacto.html">Contacto</a></li>
+        <li class="nav-item"><a class="nav-link" href="../juego/juego.html">Aplicación</a></li>
+
+        <!-- DONAR DESTACADO -->
+        <li class="nav-item">
+          <a class="btn-donar" href="./donar.html">Donar</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+<!-- HERO -->
+<header class="donar-hero">
+  <div class="overlay"></div>
+  <div class="hero-content text-center">
+    <h1>Tu ayuda nos impulsa</h1>
+    <p>Con tu aporte, seguimos construyendo un futuro sostenible</p>
+  </div>
+</header>
+
+
+
+<!-- CONTENIDO -->
+<main class="container py-5">
+
+    <!-- ¿Por qué donar? -->
+    <section class="text-center mb-5">
+        <h2 class="titulo-seccion">¿Por qué donar?</h2>
+        <p class="mx-auto descripcion">
+            EcoFuturo impulsa proyectos de educación ambiental, energías renovables y restauración de ecosistemas.
+            Tu donación permite que sigamos creando impacto real en miles de personas.
+        </p>
+    </section>
+
+    
+    <!-- MÉTODOS DE DONACIÓN -->
+    <section class="metodos-container">
+        <h2 class="text-center titulo-seccion mb-4">Elegí tu forma de colaborar</h2>
+
+        <div class="row g-4">
+
+            <!-- Transferencia -->
+            <div class="col-md-4">
+                <div class="metodo-card">
+                    <i class="bi bi-bank icono"></i>
+                    <h3>Transferencia Bancaria</h3>
+                    <p><strong>Banco:</strong> Banco Nación</p>
+                    <p><strong>Alias:</strong> ecofuturo.donar</p>
+                    <p><strong>CBU:</strong> 0000003100012345678901</p>
+                </div>
+            </div>
+
+            <!-- Mercado Pago -->
+            <div class="col-md-4">
+                <div class="metodo-card">
+                    <i class="bi bi-qr-code icono"></i>
+                    <h3>Mercado Pago</h3>
+                    <p>Escaneá el código QR para donar al instante:</p>
+                    <img src="../img/qr.png" class="qr-img" alt="QR Mercado Pago">
+                </div>
+            </div>
+
+            <!-- PayPal -->
+            <div class="col-md-4">
+                <div class="metodo-card">
+                    <i class="bi bi-paypal icono"></i>
+                    <h3>Donación Internacional</h3>
+                    <p>Realizá tu aporte de forma segura mediante PayPal.</p>
+                    <a href="#" class="btn-paypal">Donar con PayPal</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- VOLVER -->
+    <div class="text-center mt-5">
+        <a href="../index.html" class="btn-volver">← Volver al inicio</a>
+    </div>
+
+</main>
+
+
+
+<!-- FOOTER -->
+<footer class="footer">
+    <p>© 2025 EcoFuturo | Todos los derechos reservados</p>
+</footer>
+
+
+
+<!-- JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    // Navbar dinámica
+    window.addEventListener('scroll', () => {
+      document.querySelector('.navbar')
+      .classList.toggle('scrolled', window.scrollY > 50);
+    });
+</script>
+
+</body>
+</html>
