@@ -106,6 +106,12 @@
 
           <button class="btn-main w-100" type="submit">Enviar Mensaje</button>
         </form>
+
+        <!-- ALERTA DE MENSAJE ENVIADO -->
+        <div id="alerta-enviado" class="alert alert-success mt-3 d-none" role="alert">
+          ¡Tu mensaje fue enviado correctamente!
+        </div>
+
       </div>
 
     </div>
@@ -129,6 +135,22 @@
 <script>
   window.addEventListener("scroll", () => {
     document.querySelector(".navbar").classList.toggle("scrolled", window.scrollY > 50);
+  });
+
+  // Notificación al enviar
+  const form = document.querySelector(".contact-form");
+  const alerta = document.getElementById("alerta-enviado");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault(); // evita recargar
+
+    alerta.classList.remove("d-none");
+
+    setTimeout(() => {
+      alerta.classList.add("d-none");
+    }, 3000);
+
+    form.reset();
   });
 </script>
 
